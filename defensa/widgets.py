@@ -1,6 +1,10 @@
 from sqlserver_to_mysql.connections import *
 from sqlserver_to_mysql.functions_migration import *
 import options.options_registration as registration
+import options.options_attendance as attendance
+import options.options_payments as payments
+import options.options_services as services
+import options.options_trainers as trainers
 
 import tkinter as tk
 from tkinter import messagebox
@@ -78,19 +82,18 @@ def open_dialog(selection):
     entries = []
 
     if selection == "New Client": registration.new_client(dialog, entries)
-    if selection == "Existing Client": pass 
+    if selection == "Existing Client": registration.existing_client(dialog, entries)
 
-    if selection == "Add attendance": pass 
-    if selection == "Search Attendance": pass 
+    if selection == "Add attendance": attendance.add(dialog, entries)
+    if selection == "Search Attendance": attendance.search(dialog, entries)
 
-    if selection == "Register a New Trainer": pass 
-    if selection == "Modify Salary": pass 
-    if selection == "Dismiss Trainer": pass 
+    if selection == "Register a New Trainer": trainers.new_treiner(dialog, entries)
+    if selection == "Modify Salary": trainers.modify_salary(dialog, entries)
+    if selection == "Fire Trainer": trainers.dismiss_trainer(dialog, entries)
 
-    if selection == "Available Services": pass 
-    if selection == "Add Service": pass 
-    if selection == "Remove Service": pass 
+    if selection == "Modify Schedule": services.modify_schedule(dialog, entries)
+    if selection == "Add Service": services.add(dialog, entries)
+    if selection == "Remove Service": services.remove(dialog, entries)
 
-    if selection == "Add Payment": pass 
-    if selection == "Check Debt": pass 
-
+    if selection == "Add Payment": payments.add(dialog, entries)
+    if selection == "Check Debt": payments.check_debt(dialog, entries)
