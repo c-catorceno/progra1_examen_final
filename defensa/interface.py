@@ -31,8 +31,8 @@ palindrome_options : list[str] = ["cliente", "servicio", "entrenadores"]
 menus_config : list[tuple] = [
     ("Registration", ["New Client", "Existing Client"], 2, 0),
     ("Manage Attendance", ["Add attendance", "Search Attendance"], 2, 1),
-    ("Manage Trainers", ["Register a New Trainer", "Modify Salary", "Dismiss Trainer"], 3, 0),
-    ("Services", ["Available Services", "Add Service", "Remove Service"], 3, 1),
+    ("Manage Trainers", ["Register a New Trainer", "Modify Salary", "Fire Trainer"], 3, 0),
+    ("Services", ["Modify Schedule", "Add Service", "Remove Service"], 3, 1),
     ("Payments", ["Add Payment", "Check Debt"], 4, 0),
     ("Verify Palindrome", palindrome_options, 4, 1),
 ]
