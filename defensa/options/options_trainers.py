@@ -1,7 +1,7 @@
 import tkinter as tk
 from accept_message import accept
 
-def new_treiner(dialog, entries) -> None:
+def new_trainer(dialog, entries) -> None:
     tk.Label(dialog, text="ServicioID:").grid(row=0, column=0, padx=10, pady=5)
     entry = tk.Entry(dialog)
     entry.grid(row=0 , column=1 , padx=10, pady=5)
@@ -32,12 +32,12 @@ def new_treiner(dialog, entries) -> None:
     entry.grid(row=5 , column=1 , padx=10, pady=5)
     entries.append(entry)
 
-    tk.Label(dialog, text="Sueldo:").grid(row=5, column=0, padx=10, pady=5)
+    tk.Label(dialog, text="Sueldo:").grid(row=6, column=0, padx=10, pady=5)
     entry = tk.Entry(dialog)
     entry.grid(row=6 , column=1 , padx=10, pady=5)
     entries.append(entry)
 
-    tk.Label(dialog, text="Turno:").grid(row=5, column=0, padx=10, pady=5)
+    tk.Label(dialog, text="Turno:").grid(row=7, column=0, padx=10, pady=5)
     entry = tk.Entry(dialog)
     entry.grid(row=7 , column=1 , padx=10, pady=5)
     entries.append(entry)
