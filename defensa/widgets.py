@@ -87,7 +87,7 @@ def open_dialog(selection):
     if selection == "Add attendance": attendance.add(dialog, entries)
     if selection == "Search Attendance": attendance.search(dialog, entries)
 
-    if selection == "Register a New Trainer": trainers.new_treiner(dialog, entries)
+    if selection == "Register a New Trainer": trainers.new_trainer(dialog, entries)
     if selection == "Modify Salary": trainers.modify_salary(dialog, entries)
     if selection == "Fire Trainer": trainers.dismiss_trainer(dialog, entries)
 
