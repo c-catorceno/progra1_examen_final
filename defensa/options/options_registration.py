@@ -35,7 +35,7 @@ def new_client(dialog, entries) -> None:
     accept_button = tk.Button(dialog, text="Accept", command=lambda: accept(dialog, entries))
     accept_button.grid(row=6, column=0, columnspan=2, pady=10)
 
-def new_client(dialog, entries) -> None:
+def existing_client(dialog, entries) -> None:
     tk.Label(dialog, text="CI:").grid(row=0, column=0, padx=10, pady=5)
     entry = tk.Entry(dialog)
     entry.grid(row=0 , column=1 , padx=10, pady=5)
